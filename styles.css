@@ -92,11 +92,27 @@ nav{
     height: 55rem;
 }
 .text-content{
+    position: relative;
     width: 37%;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
+
+    animation-name: textmovement;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+@keyframes textmovement{
+    from{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 #hero-1{
     color: blue;
