@@ -104,16 +104,6 @@ nav{
     animation-timing-function: linear;
     animation-fill-mode: forwards;
 }
-@keyframes textmovement{
-    from{
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
 #hero-1{
     color: blue;
     font-size: 1.65rem;
@@ -162,6 +152,86 @@ nav{
     font-size: 2rem;
     transition: all 0.5s;
 }
+.mini-hero{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    animation-name: textmovement;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+.mini-hero h1{
+    font-size: 4.5rem;
+    font-weight: 800;
+    color: black;
+}
+.companies{
+    margin: 3.5rem 0;
+    background-color: rgb(240, 240, 240);
+    color: rgb(91, 89, 89);
+    display: grid;
+    gap: 8rem;
+    grid-template-areas:
+        "google microsoft linkedin vectoredu"
+    ;
+    padding: 3rem;
+    border-radius: 1rem;
+}
+.companies i{
+    font-size: 2.75rem;
+}
+.google{
+    grid-area: google;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.75rem;
+    font-weight: 900;
+}
+.microsoft{
+    grid-area: microsoft;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.75rem;
+    font-weight: 900;
+}
+.linkedin{
+    grid-area: linkedin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.75rem;
+    font-weight: 900;
+}
+.vectoredu{
+    grid-area: vectoredu;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.75rem;
+    font-weight: 900;
+}
+
+@keyframes textmovement{
+    from{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 
 @media screen and (max-width:950px){
     .btn{
@@ -189,6 +259,12 @@ nav{
         width: 75%;
         align-items: center;
         text-align: center;
+    }
+    .companies{
+        grid-template-areas: 
+            "google microsoft"
+            "linkedin vectoredu"
+        ;
     }
 }
 
