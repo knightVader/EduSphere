@@ -393,6 +393,135 @@ nav{
     padding: 1.4rem;
     color: rgb(110, 58, 142);
 }
+.testimonial{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.testimonial h1{
+    padding: 3.5rem;
+    font-size: 4rem;
+    font-weight: 800;
+    color: black;
+    text-align: center;
+}
+.testimonial-cards{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.test{
+    padding: 2rem;
+    margin: 0.5rem 3rem 3rem 3rem;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: transform 0.15s ease-in;
+}
+.test:hover{
+    transform: scale(1.08);
+    border: solid 1px blue;
+}
+.name{
+    color: blue;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.35rem;
+}
+.para, .details{
+    color: grey;
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 2.35rem;
+    text-align: center;
+}
+.testimonial-cards img{
+    height: 10rem;
+    border-radius: 50%;
+    margin: 2rem 0;
+}
+.newsletter-parent{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.newsletter{
+    max-width: 1100px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    background-color: rgb(240, 240, 240);
+    margin: 2rem 3rem 3rem 3rem;
+}
+.newsletter img{
+    width: 50%;
+    border-radius: 1rem 0 0 1rem;
+}
+.newsletter-form{
+    padding: 2.5rem;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.newsletter-form h2{
+    font-size: 4rem;
+    font-weight: 800;
+    color: blue;
+}
+.up{
+    color: grey;
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 2rem;
+}
+.down{
+    color: grey;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 2rem;
+}
+.newsletter-form a{
+    color: blue;
+    font-size: 1.45rem;
+    text-decoration: underline;
+}
+.newsletter-form form{
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.newsletter-form input{
+    border: solid 0.5px rgb(157, 157, 157);
+    outline: none;
+    padding: 0.75rem;
+    border-radius: 0.4rem;
+}
+.newsletter-form button{
+    padding: 0.9rem 1.5rem;
+    background-color: blue;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 2px;
+    margin-left: 1rem;
+}
 
 @keyframes textmovement{
     from{
@@ -432,6 +561,103 @@ nav{
         align-items: center;
         text-align: center;
     }
+    .cards{
+        width: 70%;
+    }
+    .text-content-2 p{
+        width: 80%;
+        padding: 2rem;
+    }
+    .testimonial-cards{
+        width: 90%;
+    }
+    .test{
+        padding: 1.2rem;
+    }
+    .name{
+        font-size: 1.6rem;
+    }
+    .para, .details{
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+    }
+    .testimonial-cards img{
+        height: 8rem;
+        margin: 1rem 0;
+    }
+    .newsletter-form h2{
+        font-size: 3rem;
+    }
+    .up{
+        font-size: 1.5rem;
+    }
+    .down{
+        font-size: 1.15rem;
+    }
+    .newsletter-form form{
+        margin: 1.5rem 0;
+    }
+    .newsletter-form a{
+        font-size: 1.3rem;
+    }
+    .newsletter-form input{
+        padding: 0.5rem;
+    }
+    .newsletter-form button{
+        padding: 0.75rem 1.25rem;
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width:840px){
+    .cards{
+        width: 85%;
+    }
+    .text-content-2{
+        width: 90%;
+    }
+    .testimonial-cards{
+        flex-wrap: wrap;
+    }
+    .companies{
+        gap: 5.5rem;
+        grid-template-areas:
+            "google microsoft linkedin vectoredu"
+        ;
+        padding: 2.5rem;
+        border-radius: 1rem;
+    }
+}
+
+@media screen and (max-width:640px){
+    .newsletter img{
+        display: none;
+    }
+    .newsletter-parent{
+        background-color:  rgb(240, 240, 240);
+    }
+    .newsletter{
+        width: 100%;
+    }
+    .newsletter-form{
+        width: 100%;
+    }
+    .nl-form-2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:580px){
+    .hero{
+        padding: 0 1.5rem;
+    }
+    .image img{
+        max-height: 40rem;
+    }
     .companies{
         grid-template-areas: 
             "google microsoft"
@@ -453,13 +679,12 @@ nav{
         width: 100%;
         padding: 2rem;
     }
-}
-
-@media screen and (max-width:600px){
-    .hero{
-        padding: 0 1.5rem;
+    .testimonial-cards{
+        flex-direction: column;
     }
-    .image img{
-        max-height: 40rem;
+    .test{
+        width: 100%;
+        padding: 1.5rem;
+        margin: 1.5rem auto 1.5rem auto;
     }
 }
