@@ -3,11 +3,11 @@ let xmark=document.querySelector(".xmark");
 let sidepanel=document.querySelector(".sidepanel");
 
 bars.addEventListener("click", ()=>{
-    bars.style.display="none";
+    bars.style.opacity="0";
     sidepanel.style.display="block";
 })
 
 xmark.addEventListener("click", ()=>{
-    bars.style.display="block";
+    bars.style.opacity="1";
     sidepanel.style.display="none";
 })
