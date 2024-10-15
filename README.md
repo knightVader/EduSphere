@@ -3,10 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        a{
+            font size:16px;
+         }
+    </style>
 </head>
 <body>
     <h1> 📚 EduSphere - Educational Website </h1>
    <a href="https://knightvader.github.io/EduSphere/">Click Here</a>
+   </br>
     <div>
         <p>
         EduSphere is a responsive educational website designed to provide a platform for learners and educators. It features multiple sections to present educational content, features, and contact 
