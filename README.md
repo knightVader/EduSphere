@@ -1,4 +1,15 @@
-📚 EduSphere - Educational Website
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="https://knightvader.github.io/EduSphere/">Click Here</a>
+  <p>
+    <pre>
+      📚 EduSphere - Educational Website
 
 EduSphere is a responsive educational website designed to provide a platform for learners and educators. It features multiple sections to present educational content, features, and contact information in an engaging and structured way.
 
@@ -14,3 +25,7 @@ User Interaction: Multiple sections to encourage users to explore the site.
 
 HTML5: For structuring the content.
 CSS3: For styling the webpage with visual elements and responsiveness.
+</pre>
+  </p>
+</body>
+</html>
