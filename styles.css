@@ -780,6 +780,9 @@ footer{
 }
 
 @media screen and (max-width:640px){
+    .sidepanel{
+        width: 50%;
+    }
     .newsletter img{
         display: none;
     }
